@@ -9,7 +9,7 @@ def create_app() -> FastAPI:
         title=settings.app_title,
         version=settings.app_version,
         debug=settings.debug,
-        description="REST API для справочника организаций"
+        description="REST API для справочника инцидентов"
     )
 
     app.include_router(router)
